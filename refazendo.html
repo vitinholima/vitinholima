@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>refaz</title>
+</head>
+<body>
+    
+    <div id="output"></div>
+
+    <button onclick="soma()">Somar</button>
+    <button onclick="multiplica()">Multiplicar</button>
+    <button onclick="subtrair()">Subtrair</button>
+    <button onclick="dividindo()">Dividir</button>
+    <button onclick="limparSomas()">Limpar</button>
+    
+
+    <script>
+        let n1 = prompt('Digite um número');
+        n1=parseFloat(n1);
+
+        escreve();
+
+        function escreve(){
+            var output = document.querySelector('#output');
+            output.innerHTML=n1;
+
+        }
+
+        function soma(){
+            let n=prompt('Digite um número');
+            n=parseFloat(n);
+
+            n1 = (n1 + n);
+
+            escreve();
+        }
+
+        function multiplica(){
+            let n=prompt('Digite um número');
+            n=parseFloat(n);
+
+            n1 = (n1 * n);
+
+            escreve(); //exibe o resultado de n1 * n;
+        }
+
+        function subtrair(){
+            let n=prompt('Digite um número');
+            n=parseFloat(n);
+
+            n1 = (n1 - n);
+
+            escreve();
+        }
+
+        function dividindo(){
+            let n=prompt('Digite um número');
+            n=parseFloat(n);
+
+            n1 = (n1 / n);
+
+            escreve();
+        }
+
+        function limparSomas(){
+
+            output.innerHTML = n1 = parseFloat(prompt('Digite um número agora que fez a limpeza'));
+        }
+
+    </script>
+</body>
+</html>
